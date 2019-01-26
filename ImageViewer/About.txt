@@ -1,0 +1,37 @@
+Notes on Operation:
+- User should not move files around manually or rename images manually between or
+during program sessions.
+- The Sorting feature sorts within each Directory, and the ordering of Directories is kept the same.
+- Image names on the Images tab are displayed with the name of the directory it is in for
+organizational purposes.
+- Selecting a directory will show all Images inside and within any sub-directories recursively.
+- Two Images cannot have the same name(without tags) within the same root directory in order to
+prevent IOExceptions and files being overwritten.
+- Unused Tags are cleared from the Global Tag list on program close to reduce clutter.
+- All paths shown in the GUI are full(absolute) paths.
+- Non-Image files are not filtered out and can be used in the program, however no image-preview will
+be shown for these.
+
+Notes on GUI usage:
+- To start, click File -> Add Directory and select a Directory on the computer.
+- Any Directory added to the program will have it's sub-directories added to the Directories tab as well.
+- The program will automatically scan all files in the Directory and detect any Tags that need to
+be added to the program.
+- Multiple Tags can be selected to be applied to an Image by holding CTRL when selecting Tags.
+- A larger scale preview of the currently selected Image can be found under "Full Image Preview".
+
+
+Notes on moving an Image between Directories:
+- When asked to input the name of an image, input the name without tags.
+- Full path of a directory is required for moving an image to it.
+
+- For example if i want to move GRUMPYCAT from C:\Users\b2_al\group_0518\phase2\images\cats
+to C:\Users\b2_al\group_0518\phase2\images\dogs:
+
+Start directory = C:\Users\b2_al\group_0518\phase2\images\cats
+
+End directory = C:\Users\b2_al\group_0518\phase2\images\dogs
+
+Image Name = GRUMPYCAT.
+
+Once you move an image, close the window to see changes.
